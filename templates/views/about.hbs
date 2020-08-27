@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" href="/img/cloud.png">
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <div class="main-content">
+        {{!-- Header Partial injection --}}
+        {{>header}}
+        {{!-- Dynamic injection --}}
+        <img class="portrait" src="/img/me.jpeg" alt="dave" />
+        <p>{{name}}</p>
+    </div>
+    {{!-- Footer Partial injection --}}
+    {{>footer}}
+</body>
+
+</html>
