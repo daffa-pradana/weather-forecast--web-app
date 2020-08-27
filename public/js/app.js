@@ -12,7 +12,7 @@ const messageTwo = document.querySelector("#message-2");
 weatherForm.addEventListener("submit", (e) => {
   e.preventDefault(); // Prevent to refresh the browser after submit
   const location = search.value; // Location input
-  messageOne.textContent = "Fetching data...";
+  messageOne.textContent = "Loading weather data...";
   messageTwo.textContent = "";
   // Forecast URL
   const forecastURL = "http://localhost:3000/weather?address=" + location;
