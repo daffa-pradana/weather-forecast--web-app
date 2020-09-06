@@ -16,6 +16,8 @@ const partialsPath = path.join(__dirname, "../templates/partials");
 
 // Initiate app express()
 const app = express();
+// Define port
+const port = process.env.PORT || 3000; // environment port (OR) local port
 
 /*
   ----- Handlebars -----
@@ -138,9 +140,9 @@ app.get("/help/*", (req, res) => {
   });
 });
 
-// Start a server on port 3000
-app.listen(3000, () => {
-  console.log("Server is up on port 3000"); // Indicator
+// Start a server on existing port
+app.listen(port, () => {
+  console.log("Server is up on port" + port); // Indicator
 });
 
 /* 
